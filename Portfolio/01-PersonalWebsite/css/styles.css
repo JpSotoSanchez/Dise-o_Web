@@ -2,3 +2,32 @@ img{
     width:600px;
     border:solid;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center; /* Centra horizontalmente */
+    vertical-align: middle; /* Centra verticalmente */
+}
+li:hover{
+    color: rgb(8, 4, 29);
+    font-weight: bolder;
+}
+.logos{
+    width:200px; 
+    height:200px;
+    border-radius: 2%;
+    border: none;
+}
+.books{
+    width:150px; 
+    height:200px;
+}
+#skills li{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
