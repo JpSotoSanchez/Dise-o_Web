@@ -1,5 +1,8 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 img{
-    width:600px;
+    width:400px;
     border:solid;
 }
 table {
@@ -13,10 +16,12 @@ th, td {
     text-align: center; /* Centra horizontalmente */
     vertical-align: middle; /* Centra verticalmente */
 }
-li:hover{
-    color: rgb(8, 4, 29);
-    font-weight: bolder;
+.desthr {
+    border: 0;
+    height: 10px;
+    visibility: hidden;
 }
+
 .logos{
     width:200px; 
     height:200px;
@@ -27,7 +32,35 @@ li:hover{
     width:150px; 
     height:200px;
 }
-#skills li{
-    font-family: Arial, Helvetica, sans-serif;
+.movinglist li:hover{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(8, 4, 29);
+    font-weight: bolder;
     text-decoration: none;
+}
+
+.main{
+    border: 5px double rgb(255, 0, 0);
+    text-align: center;
+}
+.image{
+    float: left;
+    top: 5px;
+    left: 5px;
+    width: 400px;
+    height: 290px;
+    position: relative;
+    margin-right: 5px;
+}
+.location{
+    position: relative;
+    display:inline-block;
+}
+.flag{
+    float:right;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    width: 200px;
+    height: 130px;
 }
