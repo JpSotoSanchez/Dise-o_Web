@@ -1,23 +1,53 @@
 *{
     font-family: 'Times New Roman', Times, serif;
+
 }
+/* Estilos generales para la tabla */
 table {
-    border: solid;
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+    margin: 20px 0; /* Añade margen arriba y abajo de la tabla */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial para un aspecto más moderno */
 }
 
-th, td {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 5px;
-    text-align: center; /* Centra horizontalmente */
-    vertical-align: middle; /* Centra verticalmente */
+/* Estilos para el encabezado de la tabla */
+thead {
+    background-color: #343a40; /* Color de fondo oscuro para el encabezado */
+    color: #ffffff; /* Color de texto blanco para contraste */
 }
 
-td a {
-    display: inline-block; /* Asegura que los enlaces se comporten como elementos en línea pero con capacidad para aplicar márgenes */
-    margin: 0 10px; /* Añade margen horizontal entre los enlaces */
+th {
+    padding: 10px 15px; /* Espaciado interno en las celdas del encabezado */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-bottom: 2px solid #ffffff; /* Línea separadora blanca debajo del encabezado */
 }
+
+/* Estilos para las celdas de la tabla */
+td {
+    padding: 10px 15px; /* Espaciado interno en las celdas */
+    border-bottom: 1px solid #dddddd; /* Línea separadora sutil entre filas */
+}
+
+/* Alternancia de colores para las filas */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo gris claro para filas pares */
+}
+
+tbody tr:hover {
+    background-color: #e9ecef; /* Color de fondo gris más oscuro al pasar el ratón por encima */
+}
+
+/* Opcional: estilos para celdas con contenido destacado */
+td.highlight {
+    background-color: #e9f7f9; /* Fondo azul claro para celdas destacadas */
+    font-weight: bold; /* Texto en negrita para destacar */
+}
+
+/* Opcional: agregar una sombra sutil a la tabla */
+table {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la tabla */
+}
+
 
 .desthr {
     border: 0;
@@ -53,7 +83,7 @@ td a {
     float: left;
     top: 5px;
     left: 5px;
-    width: 400px;
+    width: 350px;
     height: 250px;
     position: relative;
     margin-right: 5px;
@@ -79,4 +109,8 @@ td a {
 .centertitle {
     text-align: center; /* Centra el texto horizontalmente */
     margin: 0 auto;     /* Asegura que el título esté centrado dentro de su contenedor */
+}
+
+.band{
+    width: 200px;
 }

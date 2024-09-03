@@ -1,121 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Bands</title>
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
-</head>
-<body>
-    <!-- Navigation Menu -->
-    <div>
-        <table>
-            <tr>
-                <td><a href="Personalwebsite.html">Home</a></td>
-                <td><a href="./Destinations.html" target="_self">Destinations</a></td>
-                <td><a href="#" target="_self">Favorite Bands</a></td>
-            </tr>
-        </table>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favorite Bands</title>
+        <link rel="stylesheet" href="./css/styles.css" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    </head>
+    <body>
+        <!-- Navigation Menu -->
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="Personalwebsite.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link" href="Destinations.html">Features</a>
+                    <a class="nav-link" href="Music.html">Pricing</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
 
-    <!-- Section: My Favorite Bands -->
-    <h1>My Favorite Bands</h1>
-    <div>
-        <table border="1">
-            <tr>
-                <th>Name</th>
-                <th>Picture</th>
-                <th>Active Time</th>
-                <th>Famous Song</th>
-            </tr>
-            <tr>
-                <td>Powerwolf</td>
-                <td><img src="./img/PW.jpg" alt="Powerwolf image" width="100"></td>
-                <td>2003 - Still Active</td>
-                <td>Sanctified with Dynamite 
-                    <audio controls> 
-                        <source src="./audio/sanctifieddinamite.mp3" type="audio/mp3">
-                    </audio>
-                </td>
-            </tr>
-            <tr>
-                <td>Slipknot</td>
-                <td><img src="./img/slipknot.png" alt="Slipknot image" width="100"></td>
-                <td>1995 - Still Active</td>
-                <td>Before I Forget 
-                    <audio controls> 
-                        <source src="./audio/beforeforget.mp3" type="audio/mp3">
-                    </audio>
-                </td>
-            </tr>
-            <tr>
-                <td>AC/DC</td>
-                <td><img src="./img/acdc.jpg" alt="AC/DC image" width="100"></td>
-                <td>1973 - Still Active</td>
-                <td>Back in Black 
-                    <audio controls> 
-                        <source src="./audio/backblack.mp3" type="audio/mp3">
-                    </audio>
-                </td>
-            </tr>
-        </table>
-    </div>
+        <!-- Section: My Favorite Bands -->
+        <h1>My Favorite Bands</h1>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Active Time</th>
+                    <th>Famous Song</th>
+                </tr>
+                <tr>
+                    <td>Powerwolf</td>
+                    <td><img src="./img/PW.jpg" alt="Powerwolf image" class="band"></td>
+                    <td>2003 - Still Active</td>
+                    <td>Sanctified with Dynamite 
+                        <audio controls> 
+                            <source src="./audio/sanctifieddinamite.mp3" type="audio/mp3">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Slipknot</td>
+                    <td><img src="./img/slipknot.png" alt="Slipknot image" class="band"</td>
+                    <td>1995 - Still Active</td>
+                    <td>Before I Forget 
+                        <audio controls> 
+                            <source src="./audio/beforeforget.mp3" type="audio/mp3">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AC/DC</td>
+                    <td><img src="./img/acdc.jpg" alt="AC/DC image" class="band"></td>
+                    <td>1973 - Still Active</td>
+                    <td>Back in Black 
+                        <audio controls> 
+                            <source src="./audio/backblack.mp3" type="audio/mp3">
+                        </audio>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-    <!-- Section: Weekly Schedule -->
-    <h2>Weekly Schedule</h2>
-    <div>
-        <table border="1">
-            <tr>
-                <th>Date</th>
-                <th>Start</th>
-                <th>End</th>
-                <th>Description</th>
-                <th>Place</th>
-                <th>Type</th>
-                <th>Notes</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td>09:00 AM</td>
-                <td>10:00 AM</td>
-                <td>Band Practice</td>
-                <td>Studio A</td>
-                <td>Music</td>
-                <td>Practice new songs</td>
-                <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>02:00 PM</td>
-                <td>04:00 PM</td>
-                <td>Recording Session</td>
-                <td>Studio B</td>
-                <td>Music</td>
-                <td>Record new album</td>
-                <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>07:00 PM</td>
-                <td>09:00 PM</td>
-                <td>Live Performance</td>
-                <td>Downtown Club</td>
-                <td>Concert</td>
-                <td>Prepare setlist</td>
-                <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>10:00 AM</td>
-                <td>12:00 PM</td>
-                <td>Free Time</td>
-                <td>Home</td>
-                <td>Relax</td>
-                <td>Rest and recover</td>
-                <td><img src="./img/free.png" alt="Free icon" width="20"></td>
-            </tr>
-        </table>
-    </div>
-</body>
+        <!-- Section: Weekly Schedule -->
+        <h2>Weekly Schedule</h2>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>Date</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Description</th>
+                    <th>Place</th>
+                    <th>Type</th>
+                    <th>Notes</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>09:00 AM</td>
+                    <td>10:00 AM</td>
+                    <td>Band Practice</td>
+                    <td>Studio A</td>
+                    <td>Music</td>
+                    <td>Practice new songs</td>
+                    <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>02:00 PM</td>
+                    <td>04:00 PM</td>
+                    <td>Recording Session</td>
+                    <td>Studio B</td>
+                    <td>Music</td>
+                    <td>Record new album</td>
+                    <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>07:00 PM</td>
+                    <td>09:00 PM</td>
+                    <td>Live Performance</td>
+                    <td>Downtown Club</td>
+                    <td>Concert</td>
+                    <td>Prepare setlist</td>
+                    <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>10:00 AM</td>
+                    <td>12:00 PM</td>
+                    <td>Free Time</td>
+                    <td>Home</td>
+                    <td>Relax</td>
+                    <td>Rest and recover</td>
+                    <td><img src="./img/free.png" alt="Free icon" width="20"></td>
+                </tr>
+            </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>
