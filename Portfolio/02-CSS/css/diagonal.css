@@ -1,3 +1,23 @@
 body {
     margin: 0;
 }
+div{
+    width: 200px;
+    height: 200px;
+}
+#Top{
+    background-color: blue;
+    border: solid black 10px;
+    padding: 20px;
+
+}
+#Mid{
+    background-color: red;
+    border: solid 20px black;
+
+}
+#Bot{
+    background-color: yellow;
+    border: solid 10px black;
+
+}
