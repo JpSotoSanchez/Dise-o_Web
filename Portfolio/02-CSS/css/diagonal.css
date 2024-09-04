@@ -14,10 +14,13 @@ div{
 #Mid{
     background-color: red;
     border: solid 20px black;
+    position: relative;
+    left: 260px;
 
 }
 #Bot{
     background-color: yellow;
     border: solid 10px black;
-
+    position: relative;
+    left: 500px;
 }

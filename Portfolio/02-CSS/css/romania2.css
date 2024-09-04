@@ -7,20 +7,19 @@ div{
 }
 .Top{
     background-color: red;
-    position: absolute;
-    left: 700px;
-    top: 480px;
-
+    position: relative;
+    left: 800px;
 }
 .Mid{
     background-color: blue;
-    position: absolute;
-    left: 500px;
-    top: 280px;
-
+    position: relative;
+    left: 400px;
+    bottom: 200px;
 }
 .Bot{
     background-color: yellow;
-    position: absolute;
-    left: 300px;
+    position: relative;
+    left: 600px;
+    bottom: 400px;
 }
+
