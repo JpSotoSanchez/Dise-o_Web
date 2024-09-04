@@ -1,0 +1,121 @@
+body {
+    background-color: beige;
+}
+
+.cuadro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(800, 1fr); /* Define 4 columnas de igual ancho */
+    grid-template-rows: repeat(500, 1fr); /* Define 4 filas de igual alto */
+    gap: 0; /* Espacio entre los elementos */
+}
+
+.cuadro1 {
+    border: solid black 7px;
+    grid-column: 1 / 70; /* Ocupa la primera columna */
+    grid-row: 1 / 320; /* Ocupa las primeras dos filas */
+    border-left: none;
+    border-top: none;
+}
+
+.cuadro2 {
+    border: solid black 7px;
+    grid-column: 70 / 310; /* Ocupa la segunda y tercera columna */
+    grid-row: 1 / 320; /* Ocupa las primeras dos filas */
+    border-top: none;
+}
+
+.cuadro3 {
+    border: solid black 7px;
+    grid-column: 310 / 400; /* Ocupa la primera y segunda columna */
+    grid-row: 1 / 80; /* Ocupa la tercera fila */
+    border-top: none;
+}
+
+.cuadro4 {
+    border: solid black 7px;
+    grid-column: 310 / 400; /* Ocupa la primera columna */
+    grid-row: 80 / 320; /* Ocupa la cuarta fila */
+}
+
+.cuadro5 {
+    border: solid black 7px;
+    grid-column: 400 / 630; /* Ocupa de la segunda a la quinta columna */
+    grid-row: 1 / 80; /* Ocupa la cuarta fila */
+    border-top: none;
+}
+
+.cuadro6 {
+    background-color: red;
+    border: solid black 7px;
+    grid-column: 400 / 630; /* Ocupa de la segunda a la quinta columna */
+    grid-row: 80 / 320; /* Ocupa la segunda y tercera fila */
+}
+.cuadro7{
+    background-color: yellow;
+    border: solid black 7px;
+    grid-column: 630 / 801; /* Ocupa de la segunda a la quinta columna */
+    grid-row: 1 / 80; /* Ocupa la cuarta fila */
+    border-top: none;
+    border-right: none;
+}
+.cuadro8{
+    border: solid black 7px;
+    grid-column: 630 / 801; /* Ocupa de la segunda a la quinta columna */
+    grid-row: 80 / 320; /* Ocupa la segunda y tercera fila */
+    border-right: none;
+}
+.cuadro9 {
+    border: solid black 7px;
+    grid-column: 1 / 70; /* Ocupa la primera columna */
+    grid-row: 320 / 450; /* Ocupa las primeras dos filas */
+    border-left: none;
+}
+.cuadro10 {
+    border: solid black 7px;
+    grid-column: 1 / 70; /* Ocupa la primera columna */
+    grid-row: 450 / 501; /* Ocupa las primeras dos filas */
+    border-left: none;
+    border-bottom: none;
+}
+.cuadro11 {
+    background-color: blue;
+    border: solid black 7px;
+    grid-column: 70 / 310; /* Ocupa la segunda y tercera columna */
+    grid-row: 320 / 450; /* Ocupa las primeras dos filas */
+}
+.cuadro12 {
+    border: solid black 7px;
+    grid-column: 70 / 310; /* Ocupa la segunda y tercera columna */
+    grid-row: 450 / 501; /* Ocupa las primeras dos filas */
+    border-bottom: none;
+}
+.cuadro13 {
+    border: solid black 7px;
+    grid-column: 310 / 400; /* Ocupa la primera columna */
+    grid-row: 320 / 450; /* Ocupa la cuarta fila */
+}
+.cuadro14 {
+    border: solid black 7px;
+    grid-column: 310 / 400; /* Ocupa la primera columna */
+    grid-row: 450 / 501; /* Ocupa la cuarta fila */
+    border-bottom: none;
+}
+.cuadro15{
+    border: solid black 7px;
+    grid-column: 400 / 630; /* Ocupa de la segunda a la quinta columna */
+    grid-row: 320 / 501; /* Ocupa la segunda y tercera fila */
+    border-bottom: none;
+}
+.cuadro16{
+    border: solid black 7px;
+    grid-column: 630 / 801; /* Ocupa de la segunda a la quinta columna */
+    grid-row: 320 / 501; /* Ocupa la segunda y tercera fila */
+    border-bottom: none;
+    border-right: none;
+}
+
