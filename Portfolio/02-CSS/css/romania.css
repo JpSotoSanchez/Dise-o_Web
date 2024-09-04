@@ -1,26 +1,26 @@
-body {
-    margin: 0;
-}
-div{
-    width: 200px;
-    height: 200px;
-}
+
 .Top{
     background-color: red;
     position: absolute;
     left: 700px;
-    top: 480px;
+    top: 525px;
+    width: 200px;
+    height: 200px;
 
 }
 .Mid{
     background-color: blue;
     position: absolute;
     left: 500px;
-    top: 280px;
+    top: 325px;
+    width: 200px;
+    height: 200px;
 
 }
 .Bot{
     background-color: yellow;
     position: absolute;
     left: 300px;
+    width: 200px;
+    height: 200px;
 }

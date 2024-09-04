@@ -1,25 +1,25 @@
-body {
-    margin: 0;
-}
-div{
-    width: 200px;
-    height: 200px;
-}
+
 .Top{
     background-color: red;
     position: relative;
     left: 800px;
+    width: 200px;
+    height: 200px;
 }
 .Mid{
     background-color: blue;
     position: relative;
     left: 400px;
     bottom: 200px;
+    width: 200px;
+    height: 200px;
 }
 .Bot{
     background-color: yellow;
     position: relative;
     left: 600px;
     bottom: 400px;
+    width: 200px;
+    height: 200px;
 }
 

@@ -1,14 +1,10 @@
-body {
-    margin: 0;
-}
-div{
-    width: 200px;
-    height: 200px;
-}
+
 #Top{
     background-color: blue;
     border: solid black 10px;
     padding: 20px;
+    width: 200px;
+    height: 200px;
 
 }
 #Mid{
@@ -16,6 +12,8 @@ div{
     border: solid 20px black;
     position: relative;
     left: 260px;
+    width: 200px;
+    height: 200px;
 
 }
 #Bot{
@@ -23,4 +21,6 @@ div{
     border: solid 10px black;
     position: relative;
     left: 500px;
+    width: 200px;
+    height: 200px;
 }
