@@ -197,8 +197,8 @@ ol, ul {
     height: 130px;
 }
 .centertitle {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin: 0 auto;     /* Asegura que el título esté centrado dentro de su contenedor */
+    text-align: center; 
+    margin: 0 auto;     
 }
 #Habilities{
     width: 400px; 
