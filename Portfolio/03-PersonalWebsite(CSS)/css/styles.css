@@ -182,6 +182,7 @@ ol, ul {
     height: 240px;
     position: relative;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 .location{
     display:inline-block;
