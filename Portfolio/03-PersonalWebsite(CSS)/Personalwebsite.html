@@ -4,9 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Fisrt web page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
         <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    </head>
-        <body>
+        <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
+    </head>
+    <body>
             <div>
                 <nav class="navbar navbar-expand-lg bg-body-">
                     <div class="container-fluid">
@@ -16,8 +23,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                        <a class="nav-link" href="Destinations.html">Features</a>
-                        <a class="nav-link" href="Music.html">Pricing</a>
+                        <a class="nav-link" href="Destinations.html">Destinations</a>
                         </div>
                     </div>
                     </div>
@@ -25,6 +31,8 @@
             </div>
         <div>
             <h1> José Pablo Soto Sánchez</h1>
+            <img src="./img/Yo.jpg" alt="Picture of me" class="me">
+            <p></p>
             <p>Computer ingenier <strong>student.</strong></p>
             <blockquote>“The point of being good is doing it when it’s tough, not when it’s easy.”</br>--Marcus Edge</blockquote>
             <hr>
@@ -119,63 +127,148 @@
                     <li>Indian</li>
                 </ol>
             </div>
+            <hr>
             <div>
                 <h3>Books, Movies & TV shows</h3>
                 <ul>
-                    <li><span><b>Books</b></span>
+                    <li><span><h4>Books</h4></span>
                         <ul>
                             <li><b>Half Bad</b>, <i>Sally Green  </i> <img src="./img/HalfBad.jpg" class="books" alt="Half Bad img"></li>
+                            <p></p>
                             <li><b>Insignia</b>, <i>S. J. Kincaid </i><img src="./img/Insignia.jpg"  class="books" alt="Insignia img"></li>
+                            <p></p>
                             <li><b>Smoke Thieves</b>, <i>Sally Green </i><img src="./img/SmokeThieves.jpg"  class="books" alt="Smoke Thieves img"></li>
                         </ul>
                     </li>
-                
-                    <li><span><b>Movies</b></span>
+                <hr>
+                    <li><h4>Movies</h4></span>
                         <ul>
                             <li><b>Star Wars 3  </b><img src="./img/StarWars3.png" class="books" alt="Star Wars 3 img"></li>
+                            <p></p>
                             <li><b>Avengers Endgame  </b><img src="./img/Endgame.jpg" class="books" alt="Avengers Endgame img"></li>
+                            <p></p>
                             <li><b>Wall-E  </b><img src="./img/Wall-e.jpg" class="books" alt="Wall-E img"></li>
                         </ul>
                     </li>
-
-                    <li><span><b>TV shows</b></span>
+                <hr>
+                    <li><h4>TV Shows</h4></span>
                         <ul>
                             <li><b>House, M.D.  </b><img src="./img/HouseMD.jpg" class="books" alt="HouseMD img"></li>
+                            <p></p>
                             <li><b>Dexter  </b><img src="./img/Dexter.jpg" class="books" alt="Dexter img"></li>
+                            <p></p>
                             <li><b>Good Omens  </b><img src="./img/GoodOmens.jpg" class="books" alt="Good Omens img"></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
+        <hr>
         <div>
-            <hr>
-            <h2 id="bday">Myself Birthday</h2>
-            <table border="1">
-                <thead style="background-color: burlywood;">
+            <h2>My Favorite Bands</h2>
+            <div>
+                <div class="mx-auto" >
+                    <div class="column mx-auto">
+                        <div class="card">
+                            <img src="./img/PW.jpg" alt="Powerwolf">
+                            <div class="container">
+                                <h2>Powerwolf</h2>
+                                <p class="title">Active since 2003</p>
+                                <p>Sanctified with Dynamite</p>
+                                <audio controls> 
+                                    <source src="./audio/sanctifieddinamite.mp3" type="audio/mp3">
+                                </audio>
+                                <p><a href="https://www.powerwolf.net" class="button" target="_blank">Official page</a></p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="column mx-auto">
+                        <div class="card">
+                            <img src="./img/slipknot.png" alt="Slipknot">
+                            <div class="container">
+                                <h2>Slipknot</h2>
+                                <p class="title">Active since 1995</p>
+                                <p>Before I Forget</p>
+                                <audio controls> 
+                                    <source src="./audio/beforeforget.mp3" type="audio/mp3">
+                                </audio>
+                                <p><a href="https://www.slipknot1.com" class="button" target="_blank">Official page</a></p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="column mx-auto">
+                        <div class="card">
+                            <img src="./img/acdc.jpg" alt="AC/DC">
+                            <div class="container">
+                                <h2>AC/DC</h2>
+                                <p class="title">Active since 1973</p>
+                                <p>Back in Black</p>
+                                <audio controls> 
+                                    <source src="./audio/backblack.mp3" type="audio/mp3">
+                                </audio>
+                                <p><a href="https://www.acdc.com" class="button" target="_blank">Official page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <h3 id="centered">Weekly Schedule</h3>
+            <div>
+                <table border="1" class="mx-auto">
                     <tr>
-                        <th colspan="2">Full name</th>
-                        <th rowspan="2">Birthdays</th>
+                        <th>Date</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Description</th>
+                        <th>Place</th>
+                        <th>Type</th>
+                        <th>Notes</th>
+                        <th>Status</th>
                     </tr>
                     <tr>
-                    <th>Name</th>
-                    <th>Lastname</th>
+                        <td>Monday</td>
+                        <td>09:00 AM</td>
+                        <td>10:00 AM</td>
+                        <td>Band Practice</td>
+                        <td>Studio A</td>
+                        <td>Music</td>
+                        <td>Practice new songs</td>
+                        <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
                     </tr>
-                </thead>
-                <tbody>
                     <tr>
-                        <td>Myself</td>
-                        <td>Soto</td>
-                        <td>8 April</td>
+                        <td>Wednesday</td>
+                        <td>02:00 PM</td>
+                        <td>04:00 PM</td>
+                        <td>Recording Session</td>
+                        <td>Studio B</td>
+                        <td>Music</td>
+                        <td>Record new album</td>
+                        <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
                     </tr>
-                </tbody>
-                <tfoot>
-                    <td></td>
-                    <td></td>
-                    <td>1 person</td>
-                </tfoot>
-                <caption>Table of Birthdays</caption>
-            </table>
+                    <tr>
+                        <td>Friday</td>
+                        <td>07:00 PM</td>
+                        <td>09:00 PM</td>
+                        <td>Live Performance</td>
+                        <td>Downtown Club</td>
+                        <td>Concert</td>
+                        <td>Prepare setlist</td>
+                        <td><img src="./img/busy.png" alt="Busy icon" width="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10:00 AM</td>
+                        <td>12:00 PM</td>
+                        <td>Free Time</td>
+                        <td>Home</td>
+                        <td>Relax</td>
+                        <td>Rest and recover</td>
+                        <td><img src="./img/free.png" alt="Free icon" width="20"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <hr>
         <div>

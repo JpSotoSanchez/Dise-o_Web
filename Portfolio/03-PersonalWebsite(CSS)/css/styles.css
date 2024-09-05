@@ -1,12 +1,33 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
-
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
 }
+
 body {
     margin: 0;
+    background-color: aliceblue;
   }
 h1{
-    text-align: center;
+    margin: 50px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-size: 5.5rem;
+    font-style: normal;
+    color: #343a40;
+}
+h2{
+    margin: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-style: normal;
+    color: #1c3146;
+}
+h3{
+    font-family: "Montserrat", sans-serif;
+    color: #1c4d7e;
 }
 table {
     margin: 0 auto; 
@@ -46,20 +67,98 @@ td.highlight {
     background-color: #e9f7f9; 
     font-weight: bold; 
 }
-
-.desthr {
-    border: 0;
-    height: 10px;
-    visibility: hidden;
+hr {
+    border: 6px dotted #EAF6F6; /* Dotted border, 6px thick, color #EAF6F6 */
+    border-bottom: none;
+    width: 4%; /* Set the width to 4% of the screen */
+    margin-left: 100px; /* Left margin of 100px */
+    margin-right: 100px; /* Right margin of 100px */
+}
+a {
+    text-decoration: none; /* Remove the underlining */
+    font-weight: bold; /* Make the links bold */
+    color: inherit; /* Maintain the color of the surrounding text */
 }
 
-.logos{
-    border: thick black;
-    border-radius: 20px;
-    width:200px; 
-    height:200px;
-    border-radius: 2%;
+a:hover {
+    color: green; /* Change the color to green when hovered over */
+}
+ol, ul {
+    padding-left: 20px; /* Ajuste para mejorar el margen izquierdo */
+    list-style-position: inside; /* Hace que los números o viñetas estén dentro */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para las columnas */
+.column {
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 16px;
+    padding: 0 0px;
+    padding-left:  1%;
+    padding-right: 1%;
+}
+
+/* Mostrar las columnas una debajo de otra en pantallas pequeñas */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    min-height: 500px; /* Establece un alto mínimo para todas las tarjetas */
+    display: flex;
+    flex-direction: column; /* Para alinear los elementos dentro */
+    justify-content: space-between; /* Espacia el contenido de manera uniforme */
+}
+
+.container {
+    padding: 16px;
+    flex-grow: 1; /* Hace que el contenido crezca para llenar el espacio restante */
+}
+
+.title {
+    color: grey;
+}
+
+.button {
     border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Ajustar la imagen para que se adapte a la altura */
+.card img {
+    width: 100%;
+    height: 300px; /* Ajusta la altura de la imagen para mantener uniformidad */
+}
+
+
+
+  
+.logos{
+    border: solid black;
+    width:100px; 
+    height:100px;
+    border-radius: 100%;
 }
 .books{
     width:150px; 
@@ -97,25 +196,63 @@ td.highlight {
     right: 5px;
     width: 200px;
     height: 130px;
-    margin-bottom: 15px;
 }
 #Habilities{
     width: 400px; 
     height: 400px;
+    background-color: transparent;
 }
 .centertitle {
     text-align: center; /* Centra el texto horizontalmente */
     margin: 0 auto;     /* Asegura que el título esté centrado dentro de su contenedor */
 }
 
-.band{
-    width: 200px;
-}
+
 #centered{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
 }
-#formato{
-    text-align: center;
+/* Estilo para el formulario */
+#formato {
+    border: 2px dotted #000; /* Borde punteado */
+    padding: 20px; /* Espacio interno del formulario */
+    background-color: #f0f0f5; /* Fondo del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 80%; /* Ancho del formulario */
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar formulario horizontalmente */
+}
+
+/* Estilo para los inputs, selects y textarea dentro del formulario */
+#formato input[type="date"],
+#formato input[type="time"],
+#formato input[type="text"],
+#formato select,
+#formato textarea,
+#formato input[type="color"] {
+    width: 100%; /* Ancho completo menos el padding */
+    padding: 10px; /* Espacio interno */
+    margin: 10px 0; /* Espaciado vertical */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #e6e6f0; /* Fondo que combina con el fondo del formulario */
+    border: 1px solid #ccc; /* Borde para los inputs */
+    box-sizing: border-box; /* Ajustar tamaño al contenedor */
+}
+
+/* Estilo para el checkbox */
+#formato input[type="checkbox"] {
+    margin-right: 10px; /* Espacio entre checkbox y etiqueta */
+}
+
+/* Estilo para las etiquetas */
+#formato label {
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+.me{
+    border: solid black;
+    width:200px; 
+    height:200px;
+    border-radius: 100%;
 }
