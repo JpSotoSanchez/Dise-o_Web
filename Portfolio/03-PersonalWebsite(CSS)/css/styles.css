@@ -144,15 +144,30 @@ ol, ul {
     height:100px;
     border-radius: 100%;
 }
-.books{
-    width:150px; 
-    height:200px;
+.media-grid {
+    display: grid;
+    gap: 20px;
 }
-.movinglist li:hover{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(8, 4, 29);
-    font-weight: bolder;
-    text-decoration: none;
+.category {
+    margin-bottom: 20px;
+}
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+.item {
+    text-align: center;
+}
+.books {
+    width: 240px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+.item p {
+    margin-top: 10px; 
+    font-size: 14px; 
 }
 .main{
     border: 5px double rgb(255, 0, 0);
@@ -231,13 +246,18 @@ ol, ul {
     position: sticky;
     top: 100px; 
     width: 300px;
-    float: left; 
+    float: left;
+    left: 50px;
+    z-index: -1;  
 }
 .cloud2 {
     position: sticky;
     top: 100px; 
     width: 300px;
-    float: right; 
+    float: right;
+    right: 50px;
+    transform: scaleX(-1);
+    z-index: -1;  
 }
 .background{
     width: 50%;
