@@ -18,7 +18,7 @@ h1{
     color: #343a40;
 }
 h2{
-    margin: 50px;
+    margin: 20px;
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     padding-bottom: 10px;
@@ -68,28 +68,25 @@ td.highlight {
     font-weight: bold; 
 }
 hr {
-    border: 6px dotted #EAF6F6; /* Dotted border, 6px thick, color #EAF6F6 */
+    border: 6px dotted #EAF6F6; 
     border-bottom: none;
-    width: 4%; /* Set the width to 4% of the screen */
-    margin-left: 100px; /* Left margin of 100px */
-    margin-right: 100px; /* Right margin of 100px */
+    width: 4%; 
+    margin-left: 100px; 
+    margin-right: 100px; 
 }
 a {
-    text-decoration: none; /* Remove the underlining */
-    font-weight: bold; /* Make the links bold */
-    color: inherit; /* Maintain the color of the surrounding text */
+    text-decoration: none; 
+    font-weight: bold; 
 }
 
 a:hover {
-    color: green; /* Change the color to green when hovered over */
+    color: green; 
 }
 ol, ul {
-    padding-left: 20px; /* Ajuste para mejorar el margen izquierdo */
-    list-style-position: inside; /* Hace que los números o viñetas estén dentro */
-    margin-bottom: 20px; /* Espaciado inferior */
+    padding-left: 20px; 
+    list-style-position: inside; 
+    margin-bottom: 20px; 
 }
-
-/* Estilo para las columnas */
 .column {
     display: inline-block;
     width: 32%;
@@ -98,8 +95,6 @@ ol, ul {
     padding-left:  1%;
     padding-right: 1%;
 }
-
-/* Mostrar las columnas una debajo de otra en pantallas pequeñas */
 @media screen and (max-width: 650px) {
     .column {
         width: 100%;
@@ -108,27 +103,23 @@ ol, ul {
         padding-right: 0;
     }
 }
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    min-height: 500px; /* Establece un alto mínimo para todas las tarjetas */
+    min-height: 500px; 
     display: flex;
-    flex-direction: column; /* Para alinear los elementos dentro */
-    justify-content: space-between; /* Espacia el contenido de manera uniforme */
+    flex-direction: column; 
+    justify-content: space-between; 
 }
-
 .container {
     padding: 16px;
-    flex-grow: 1; /* Hace que el contenido crezca para llenar el espacio restante */
+    flex-grow: 1; 
 }
-
 .title {
     color: grey;
 }
-
 .button {
     border: none;
     outline: 0;
@@ -140,20 +131,13 @@ ol, ul {
     cursor: pointer;
     width: 100%;
 }
-
 .button:hover {
     background-color: #555;
 }
-
-/* Ajustar la imagen para que se adapte a la altura */
 .card img {
     width: 100%;
-    height: 300px; /* Ajusta la altura de la imagen para mantener uniformidad */
+    height: 300px; 
 }
-
-
-
-  
 .logos{
     border: solid black;
     width:100px; 
@@ -170,7 +154,6 @@ ol, ul {
     font-weight: bolder;
     text-decoration: none;
 }
-
 .main{
     border: 5px double rgb(255, 0, 0);
     text-align: center;
@@ -197,17 +180,15 @@ ol, ul {
     width: 200px;
     height: 130px;
 }
+.centertitle {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto;     /* Asegura que el título esté centrado dentro de su contenedor */
+}
 #Habilities{
     width: 400px; 
     height: 400px;
     background-color: transparent;
 }
-.centertitle {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin: 0 auto;     /* Asegura que el título esté centrado dentro de su contenedor */
-}
-
-
 #centered{
     text-align: center;
     margin-right: auto;
@@ -215,44 +196,65 @@ ol, ul {
 }
 /* Estilo para el formulario */
 #formato {
-    border: 2px dotted #000; /* Borde punteado */
-    padding: 20px; /* Espacio interno del formulario */
-    background-color: #f0f0f5; /* Fondo del formulario */
-    border-radius: 10px; /* Bordes redondeados */
-    width: 80%; /* Ancho del formulario */
-    max-width: 600px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar formulario horizontalmente */
+    border: 2px dotted #000;
+    padding: 20px;
+    background-color: #f0f0f5;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-/* Estilo para los inputs, selects y textarea dentro del formulario */
-#formato input[type="date"],
-#formato input[type="time"],
-#formato input[type="text"],
-#formato select,
-#formato textarea,
-#formato input[type="color"] {
-    width: 100%; /* Ancho completo menos el padding */
-    padding: 10px; /* Espacio interno */
-    margin: 10px 0; /* Espaciado vertical */
-    border-radius: 15px; /* Bordes redondeados */
-    background-color: #e6e6f0; /* Fondo que combina con el fondo del formulario */
-    border: 1px solid #ccc; /* Borde para los inputs */
-    box-sizing: border-box; /* Ajustar tamaño al contenedor */
+#formato input[type="date"],#formato input[type="time"],#formato input[type="text"],#formato select,#formato textarea,#formato input[type="color"] 
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; 
+    border-radius: 15px; 
+    background-color: #e6e6f0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
-
-/* Estilo para el checkbox */
 #formato input[type="checkbox"] {
-    margin-right: 10px; /* Espacio entre checkbox y etiqueta */
+    margin-right: 10px;
 }
-
-/* Estilo para las etiquetas */
 #formato label {
-    font-weight: bold; /* Negrita para las etiquetas */
+    font-weight: bold; 
 }
-
 .me{
     border: solid black;
     width:200px; 
     height:200px;
     border-radius: 100%;
+}
+.cloud1 {
+    position: sticky;
+    top: 100px; 
+    width: 300px;
+    float: left; 
+}
+.cloud2 {
+    position: sticky;
+    top: 100px; 
+    width: 300px;
+    float: right; 
+}
+.background{
+    width: 50%;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit-button {
+    background-color: #7b98b8; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    border-radius: 5px; 
+    transition: background-color 0.5s ease; 
+}
+
+.submit-button:hover {
+    background-color: #196ac0bd;
 }
