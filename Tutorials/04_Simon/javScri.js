@@ -95,21 +95,29 @@ function checkAnswer(color){
             setTimeout(nextSequence,1000);
         }
     }
+    //el usuario se equivoco
     else{
         console.log("wrong");
         //sonido erroneo
         playSound("wrong");
-        //añade 
+        //añade la clase gameover al body del html
         $("body").addClass("gameover");
-        $("#level-title").text("Game over, Press Any Key to Restart");
-        setTimeout($("body").removeClass("gameover"),200);
+        //Cambia el titulo
+        $("#level-title").text("Game Over, Press Any Key to Restart");
+        //la funcion, que así es la sintaxis y no se debe de cambiar, quita del body la clase gameover despues de 0.2 segundos
+        setTimeout(function () {
+          $("body").removeClass("gameover");
+        }, 200);
+        //funcion startOver
         startOver();
-        console.log("asfasd");
     }
 }
-
+//Reinicia los valores para que se pueda volver a empezar
 function startOver() {
+    //reinicia el nivel
     level = 0;
+    //reinicia los patrones de colores
     listacolores = [];
+    //Cambia el valor a False para que se pueda reiniciar todo con la tecla
     started = false;
 }
