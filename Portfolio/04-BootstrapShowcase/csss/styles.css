@@ -1,10 +1,14 @@
 /* General Styles */
-body {
+.cuerpo {
     font-family: 'Poppins', sans-serif; /* O cualquier fuente profesional de Google Fonts */
     background-color: #f8f9fa; /* Color de fondo suave */
     color: #212529; /* Color de texto estándar */
     line-height: 1.6; /* Mejor legibilidad */
 }
+.tipo{
+    margin-top: 100px;
+}
+
 
 /* Navbar */
 .nav-link {

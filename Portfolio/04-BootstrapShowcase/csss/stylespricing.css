@@ -1,0 +1,69 @@
+
+
+  .container {
+    max-width: 960px;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  /* General updates for all cards */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Free Plan Colors */
+.card-header {
+    background-color: #f8f9fa; /* Light grey for free plan */
+}
+.btn-outline-primary {
+    color: #007bff; /* Text color for free plan button */
+    border-color: #007bff; /* Border color for free plan button */
+}
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Pro Plan Colors */
+.btn-primary {
+    background-color: #007bff; /* Color for Pro plan button */
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Ultimate Plan Colors */
+.text-bg-primary {
+    background-color: #28a745 !important; /* Update the color of the Ultimate plan header */
+}
+.border-primary {
+    border-color: #28a745 !important; /* Update the border color of the Ultimate plan */
+}
+.btn-primary {
+    background-color: #28a745; /* Button color for Ultimate plan */
+    border-color: #28a745;
+}
+.btn-primary:hover {
+    background-color: #218838;
+}
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    color: #495057 !important; /* Color de link activo */
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
