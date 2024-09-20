@@ -1,0 +1,6 @@
+.fire {
+    background-image: url('../img/fire.png'); /* Imagen de fondo para el botón */
+    background-size: cover; /* Ajusta el tamaño para cubrir todo el botón */
+    background-position:bottom; /* Centra la imagen */
+    border: none; /* Opcional: elimina el borde del botón */
+}
