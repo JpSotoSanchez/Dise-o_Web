@@ -1,6 +1,13 @@
 .fire {
-    background-image: url('../img/fire.png'); /* Imagen de fondo para el botón */
-    background-size: cover; /* Ajusta el tamaño para cubrir todo el botón */
+    background-image: url('../img/metalback.png');
+    background-size:auto; /* Ajusta el tamaño para cubrir todo el botón */
     background-position:bottom; /* Centra la imagen */
+    border: none; /* Opcional: elimina el borde del botón */
+}
+.skull{
+    height: 100px;
+    background-image: url('../img/skull.jpg');
+    background-size: 150px; /* Ajusta el tamaño para cubrir todo el botón */
+    background-position:right; /* Centra la imagen */
     border: none; /* Opcional: elimina el borde del botón */
 }
