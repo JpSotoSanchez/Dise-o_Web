@@ -1,0 +1,14 @@
+.principal {
+    background-image: url('../img/wood.jpg');
+    background-size:cover; /* Ajusta el tamaño para cubrir todo el botón */
+    background-position:center; /* Centra la imagen */
+    border: none; /* Opcional: elimina el borde del botón */
+}
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

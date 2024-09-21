@@ -56,13 +56,6 @@
     font-weight: 500;
     text-transform: uppercase;
 }
-
-.nav-link.active {
-    color: #495057 !important; /* Color de link activo */
-    background-color: #e9ecef;
-    border-radius: 5px;
-}
-
 .navbar {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
