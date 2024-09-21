@@ -1,10 +1,13 @@
-
-
-  .container {
+body{
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {
     max-width: 960px;
   }
   
-  .pricing-header {
+.pricing-header {
     max-width: 700px;
   }
   /* General updates for all cards */
@@ -16,13 +19,9 @@
     transform: scale(1.05);
 }
 
-/* Free Plan Colors */
-.card-header {
-    background-color: #f8f9fa; /* Light grey for free plan */
-}
 .btn-outline-primary {
-    color: #007bff; /* Text color for free plan button */
-    border-color: #007bff; /* Border color for free plan button */
+    color: #007bff; 
+    border-color: #007bff; 
 }
 .btn-outline-primary:hover {
     background-color: #007bff;
@@ -31,27 +30,13 @@
 
 /* Pro Plan Colors */
 .btn-primary {
-    background-color: #007bff; /* Color for Pro plan button */
+    background-color: #007bff; 
     border-color: #007bff;
 }
 .btn-primary:hover {
     background-color: #0056b3;
 }
 
-/* Ultimate Plan Colors */
-.text-bg-primary {
-    background-color: #28a745 !important; /* Update the color of the Ultimate plan header */
-}
-.border-primary {
-    border-color: #28a745 !important; /* Update the border color of the Ultimate plan */
-}
-.btn-primary {
-    background-color: #28a745; /* Button color for Ultimate plan */
-    border-color: #28a745;
-}
-.btn-primary:hover {
-    background-color: #218838;
-}
 .nav-link {
     font-weight: 500;
     text-transform: uppercase;

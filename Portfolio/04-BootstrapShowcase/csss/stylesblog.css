@@ -1,0 +1,16 @@
+body{
+    font-family: "Almendra", serif;
+    
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(99, 99, 89);
+}
+h1,h2,h3, h4, h5, h6{
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
