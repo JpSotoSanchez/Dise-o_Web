@@ -17,9 +17,11 @@
             var maxNum = parseInt(1299827);
             if (number < maxNum && !isNaN(number)) {
                 for (var i = number + 1; i < maxNum; i++) {
-                    //TODO: check if the current number is a prime or not
-                    // If it is, then return it
-                    continue;
+                    console.log("Ahora se va a probar el numero: "+i);
+                    if (isPrime(i)) {
+                        window.alert("The next prime number is: " + i);
+                        return true;
+                    }
                 }
             } else {
                 window.alert("Please Enter Number Below 1299827 or Enter A Valid Integer");
@@ -27,8 +29,8 @@
             }
         }
         function isPrime(num) {
-            for (var i = 2; i < num; i++) {
-                if (num % i === 0) {
+            for (var j = 2; j < num; j++) {
+                if (num % j === 0) {
                     return false;
                 }
             }
