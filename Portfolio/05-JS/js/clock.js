@@ -11,19 +11,25 @@ function drawFace(ctx, radius) {
   ctx.fillStyle = "white";
   ctx.fill();
 
+
   // Draw the edge circle with gradient
   // TODO: (Optional) add a gradient circle
 
+
   // Center circle
   // TODO: make the central black circle
+  ctx.beginPath(); //dibujar
+  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI); //hacer un arco con ciertas medicas
+  ctx.fillStyle = "#333"; //color del circulo
+  ctx.fill(); //que este relleno y no sea solo borde
 }
 
 function drawNumbers(ctx, radius) {
-  //TODO: Make sure you show all the numbers
   ctx.font = radius * 0.15 + "px arial";
   ctx.textBaseline = "middle";
   ctx.fillStyle = "#333";
   ctx.textAlign = "center";
+  //Tambien se puede poner numero por numero jajajajaja
   for(var num=1;num<13;num++){
     var ang;
     ang = (num * Math.PI) / 6;
@@ -43,13 +49,13 @@ function drawTime(ctx, radius) {
   var hour = now.getHours();
   var minute = now.getMinutes();
   var second = now.getSeconds();
-  //hour
+  
   hour = (hour % 12)* Math.PI / 6;
   drawHand(ctx, hour, radius * 0.4, radius * 0.07);
-  //minute
+  
   minute = (minute % 60)* Math.PI / (6*5);
   drawHand(ctx, minute, radius * 0.70, radius * 0.07);
-  // second
+
   second = (second % 60)* Math.PI /(6*5);
   drawHand(ctx, second, radius * 0.8, radius * 0.02);
 }
