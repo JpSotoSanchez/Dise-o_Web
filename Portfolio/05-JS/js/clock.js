@@ -19,7 +19,7 @@ function drawFace(ctx, radius) {
   // Center circle
   // TODO: make the central black circle
   ctx.beginPath(); //dibujar
-  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI); //hacer un arco con ciertas medicas
+  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI); //hacer un arco con ciertas medidas
   ctx.fillStyle = "#333"; //color del circulo
   ctx.fill(); //que este relleno y no sea solo borde
 }
