@@ -1,21 +1,37 @@
 /*
-    Sieve of Eratosthenes - The sieve of Eratosthenes is one of the most efficient ways
-    to find all of the smaller primes (below 10 million or so).
+    Sieve of Eratosthenes - This implementation finds all the prime numbers below a given number.
 */
-
-// TODO: Adjust this script so it can work with the sieve.html file.
-
 var sieve = function (n) {
   "use strict";
 
-  var array = [],
-    primes = [],
-    i,
-    j;
+  var array = new Array(n).fill(true); 
+  var primes = [];
+  array[0] = array[1] = false; 
 
-  // TODO: Implement the sieve of eratosthenes algorithm to find all the prime numbers under the given number.
+  for (var i = 2; i < Math.sqrt(n); i++) {
+    if (array[i]) {
+      for (var j = i * i; j < n; j += i) {
+        array[j] = false;
+      }
+    }
+  }
+
+  for (var i = 2; i < n; i++) {
+    if (array[i]) {
+      primes.push(i);
+    }
+  }
 
   return primes;
 };
 
-console.log(sieve(1000000));
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("btn").addEventListener("click", function () {
+    var num = parseInt(document.getElementById("num").value, 10);
+    var primes = sieve(num); 
+
+    // Display primes in the HTML
+    document.getElementById("primes").textContent = primes.join(", ");
+  });
+});
+
