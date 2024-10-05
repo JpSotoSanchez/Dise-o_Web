@@ -1,0 +1,22 @@
+{
+  "name": "07-basicnode",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "07 Portfolio WebDesign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Soto",
+    "Repository",
+    "Node"
+  ],
+  "author": "Soto",
+  "license": "ISC",
+  "dependencies": {
+    "star-wars-quotes": "^1.0.2",
+    "superheroes": "^4.0.0",
+    "supervillains": "^4.0.0"
+  }
+}
