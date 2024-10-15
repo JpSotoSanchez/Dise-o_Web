@@ -9,11 +9,13 @@
 </head>
 
 <body>
-    <% if (locals.error) { %>
+    
+    <script> if (locals.error) { </script>
         <h3>
-            <%= error %>
+            <script> locals.error </script>
         </h3>
-        <% } %>
+    <script>}</script>  
+    
             <form action="/greet" method="get">
                 Register:
                 <input type="text" name="name" id="name" placeholder="Name">

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express test</title>
+    <title>Wazzup!</title>
 </head>
-
 <body>
-    <h1>Success!!</h1>
-    <h3>Wazzup <%= name %>
-    </h3>
+    <h1>Wazzup, <span id="namePlaceholder">Guest</span>!</h1> <!-- Mostramos el nombre aquí -->
     <br />
-    <a href="/">
-        Go back </a>
-</body>
+    <a href="/"> Go back </a>
 
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name') || 'Guest'; 
+
+
+        document.getElementById('namePlaceholder').textContent = name;
+    </script>
+</body>
 </html>
