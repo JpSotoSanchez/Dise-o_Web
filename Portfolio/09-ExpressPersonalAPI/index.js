@@ -56,6 +56,11 @@ app.get('/move-up/:idx', (req, res) => {
     res.redirect('/');
 });
 
+// Devuelve las tareas como JSON (accesible solo desde Postman u otra herramienta)
+app.get('/task', (req, res) => {
+    res.json(toDO); // Envía la lista como JSON
+});
+
 // Mover tarea hacia abajo
 app.get('/move-down/:idx', (req, res) => {
     const index = parseInt(req.params.idx);
