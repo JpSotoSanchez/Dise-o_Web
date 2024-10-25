@@ -1,13 +1,13 @@
 const express = require('express');
-const path = require('path');
 const app = express();
 var lista = []; // Cambiado a let para usar el scope adecuado
 var toDO=[];
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));  
 app.engine("ejs", require("ejs").renderFile);
 app.set("view engine", "ejs");
+
 
 // Middleware personalizado para manejar errores y mostrar un mensaje de error al cliente
 app.use((err, req, res, next) => {
@@ -68,6 +68,14 @@ app.get('/move-down/:idx', (req, res) => {
         [toDO[index], toDO[index + 1]] = [toDO[index + 1], toDO[index]]; // Intercambia posiciones
     }
     res.redirect('/');
+});
+
+app.put('/greet/:name', (req, res) => {
+    const name = req.params.name;
+    if (name && !lista.includes(name)) {
+        lista.push(name);
+    }
+    res.json(lista); 
 });
 
 app.listen(3000, () => {
