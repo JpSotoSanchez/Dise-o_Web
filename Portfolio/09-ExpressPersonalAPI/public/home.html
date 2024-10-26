@@ -16,12 +16,16 @@
         </h3>
     <script>}</script>  
     
-            <form action="/greet" method="get">
-                Register:
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="submit" value="go next">
-            </form>
-
+    <form action="/greet" method="get">
+        Register:
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="submit" value="go next">
+    </form>
+    <script>if(locals.lista){</script>
+        <script>for(var i =0;i<locals.lista.length();i++){</script>
+            <h3> Hello {name}</h3>
+        <script>}</script>
+    <script>}</script>
 </body>
 
 </html>

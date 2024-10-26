@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express test</title>
+</head>
+
+<body>
+    
+    <% if (locals.error) { %>
+        <h3>
+            <%= locals.error %>
+        </h3>
+    <% } %>  
+    
+    <form action="/greet" method="get">
+        Register:
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="submit" value="go next">
+    </form>
+    
+    <% if (locals.lista && locals.lista.length >= 1) { %>
+        <% for (var i = 0; i < locals.lista.length; i++) { %>
+            <h3>
+                <a href="/greet?name=<%= locals.lista[i] %>">Hello <%= locals.lista[i] %></a>
+            </h3>
+        <% } %>
+    <% } %>
+    <h2>TO DO List</h2>
+    <form action="/add" method="POST">
+        <input type="text" name="task" placeholder="New item for the list">
+        <button type="submit" name="submit">Add</button>
+    </form>
+
+    <% if (toDO.length > 0) { %>
+        <ol>
+            <% toDO.forEach((task, index) => { %>
+                <li>
+                    <%= task %> 
+                    <!-- Enlace para eliminar el ítem -->
+                    <a href="/remove/<%= index %>">❌</a>
+                    <!-- Botones de flecha para cambiar el orden -->
+                    <a href="/move-up/<%= index %>">⬆</a>
+                    <a href="/move-down/<%= index %>">⬇</a>
+                </li>
+            <% }) %>
+        </ol>
+    <% } %>
+
+</body>
+
+</html>
