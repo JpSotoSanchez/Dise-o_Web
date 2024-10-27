@@ -26,6 +26,14 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/html/index.html");
 });
 
+app.get("/login", (req, res) => {
+  res.render('<h3>You have been loged lesgo</h3>');
+});
+
+app.post("/login", (req, res) => {
+  res.sendFile(__dirname + "/public/html/index.html");
+});
+
 app.listen(3000, (err) => {
   console.log("Listening on port 3000");
 });
