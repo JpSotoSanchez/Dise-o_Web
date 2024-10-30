@@ -3,37 +3,36 @@ const https = require("https");
 const bodyParser = require("body-parser");
 
 const app = express();
-app.use(express.static("public")); // Serves static files from 'public' directory
+app.use(express.static("public")); 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Route to render the home page
+
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html"); // Sends the home page HTML
+  res.sendFile(__dirname + "/public/index.html"); 
 });
 
-// Route to handle weather search
+
 app.post("/weather", (req, res) => {
-  const city = req.body.cityName; // Get the city name from the form submission
-  const apiKey = "b546bfe8f5d581506ee66a0362c6cb7f"; // Replace with your actual API key
-  const unit = "metric"; // Celsius unit
+  const city = req.body.cityName; 
+  const apiKey = "b546bfe8f5d581506ee66a0362c6cb7f"; 
+  const unit = "metric"; 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
-  // Making HTTPS GET request to OpenWeatherMap
+
   https.get(url, (response) => {
-    let dataChunks = []; // Store incoming data in chunks
+    let dataChunks = []; 
     response.on("data", (chunk) => {
-      dataChunks.push(chunk); // Append each chunk of data to the array
+      dataChunks.push(chunk); 
     });
 
     response.on("end", () => {
       try {
-        const weatherData = JSON.parse(Buffer.concat(dataChunks)); // Parse data
+        const weatherData = JSON.parse(Buffer.concat(dataChunks)); 
         if (weatherData.cod === 200) {
           const temp = weatherData.main.temp;
           const description = weatherData.weather[0].description;
           const icon = weatherData.weather[0].icon;
           const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
 
-          // Respond with a page displaying the weather details
           res.send(`
             <h1>Weather in ${city}</h1>
             <p>Temperature: ${temp}°C</p>
