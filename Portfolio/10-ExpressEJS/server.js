@@ -1,34 +1,74 @@
 const express = require("express");
 const app = express();
-const path = require("path");
+
+var name="";
+var posts = []; 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Configuración de EJS
+app.engine("ejs",require("ejs").renderFile);
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
-
-const longContent =
-  "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
-
-let posts = [];
 
 // Renderizar la página de inicio con EJS
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/html/index.html"); // 'name' nulo para cuando se carga la página por primera vez
+  res.sendFile(__dirname+'/public/html/index.html'); 
 });
 
 app.get("/login", (req, res) =>{
-  const name = req.query.name;
-  res.render("login.ejs", { name }); 
+  name = req.query.name;
+  res.render("home.ejs", { name,posts }); 
 })
 
 app.post("/login", (req, res) => {
-  const name = req.body.name;
-  res.render("login.ejs", { name }); // Enviar el nombre al renderizar la página
+  name = req.body.name;
+  res.render("home.ejs", { name,posts }); 
 });
+
+
+app.post("/newpost", (req, res) => {
+  const { title, content } = req.body;
+  const newPost = {
+    id: posts.length + 1,
+    title,
+    content,
+  };
+  posts.push(newPost);
+  res.render("home.ejs", { name,posts }); 
+});
+
+app.get("/post/:id", (req, res) => {
+  const post = posts.find(p => p.id === parseInt(req.params.id));
+  if (post) {
+    res.render("post.ejs", { name,post });
+  } else {
+    res.status(404).send("Post not found");
+  }
+});
+
+
+app.post("/editpost/:id", (req, res) => {
+  const { id } = req.params;
+  const { title, content } = req.body;
+  const post = posts.find(p => p.id === parseInt(id));
+  if (post) {
+    post.title = title;
+    post.content = content;
+    res.redirect(`/post/${id}`);
+  } else {
+    res.status(404).send("Post not found");
+  }
+});
+
+// Ruta para eliminar una publicación (POST)
+app.post("/deletepost/:id", (req, res) => {
+  const { id } = req.params;
+  posts = posts.filter(p => p.id !== parseInt(id));
+  res.render("home.ejs", { name,posts }); 
+});
+
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");
