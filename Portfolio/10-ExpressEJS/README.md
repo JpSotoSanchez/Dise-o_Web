@@ -1,4 +1,5 @@
-# Express EJS
+
+ # Express EJS
 
 This exercise will ilustrate how do we use EJS to create dynamic content using Express.
 
