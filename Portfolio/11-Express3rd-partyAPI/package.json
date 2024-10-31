@@ -1,0 +1,20 @@
+{
+  "name": "11-express3rd-partyapi",
+  "version": "1.0.0",
+  "description": "For the portfolio 11",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soto",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "form-data": "^4.0.1",
+    "https": "^1.0.0",
+    "nodemon": "^3.1.7"
+  }
+}
