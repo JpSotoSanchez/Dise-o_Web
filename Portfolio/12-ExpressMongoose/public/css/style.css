@@ -1,26 +1,181 @@
-html {
-    min-height: 100%;
-    position: relative;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+/* General */
 body {
-    background-color: beige !important;
+    background-color: #faf8f0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
-img {
-    width: 80px;
+/* Encabezado */
+h2 {
+    font-size: 1.8em;
+    color: #c9b220;
+    margin-bottom: 20px;
 }
 
-#num,
-#code {
-    width: 35px;
+/* Estilos del formulario */
+form {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
-form input,
-select {
-    border-style: none;
+form input[type="text"],
+form input[type="date"],
+form input[type="url"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
 }
 
-input[type=text]:focus {
-    border: 4px solid #c9b220;
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="url"]:focus,
+form select:focus {
+    border-color: #c9b220;
+    outline: none;
+}
+
+form label {
+    grid-column: span 2;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+    padding-left: 2px;
+}
+
+form input::placeholder {
+    color: #bbb;
+}
+
+form input[type="submit"] {
+    background-color: #c9b220;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: span 2;
+}
+
+form input[type="submit"]:hover {
+    background-color: #b0a11c;
+}
+
+/* Distribución de los campos específicos */
+form h2 {
+    grid-column: span 2;
+}
+
+form input[name="num"],
+form input[name="code"],
+form input[name="name"],
+form input[name="lname"],
+form select[name="nation"],
+form select[name="team"] {
+    grid-column: span 1;
+}
+
+form input[name="dob"],
+form input[name="url"] {
+    grid-column: span 2;
+}
+
+
+
+/* Estilos de la tabla */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.table-header,
+.table-row {
+    display: contents;
+}
+
+.table-header div,
+.table-row div {
+    padding: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+}
+
+.table-header div {
+    background-color: #c9b220;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table-row:nth-child(even) div {
+    background-color: #f9f9f9;
+}
+
+.table-row div {
+    background-color: #fff;
+    font-weight: normal;
+}
+
+.table-row:hover div {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+.column-num { width: 50px; }
+.column-code { width: 50px; }
+.column-name { width: 150px; }
+.column-lastname { width: 150px; }
+.column-dob { width: 100px; }
+.column-bio { width: 200px; }
+.column-team { width: 100px; }
+
+/* Botón dentro de la tabla */
+.table-button {
+    background-color: #c9b220;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.table-button:hover {
+    background-color: #b0a11c;
 }

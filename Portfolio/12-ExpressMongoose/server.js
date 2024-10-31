@@ -1,12 +1,17 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.engine("ejs", require("ejs").renderFile);
 app.set("view engine", "ejs");
+
+var user = process.env.USER;
+var password = process.env.PASSWORD;
+var db = process.env.DB;
 
 const mongoUrl = "mongodb://127.0.0.1:27017/f1";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -54,7 +59,11 @@ let countries = [
 ];
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/html/index.html");
+  res.render("index.ejs",{});
+});
+
+app.get("/driver", (req, res) => {
+  res.render("index.ejs",{});
 });
 
 app.listen(3000, (err) => {
