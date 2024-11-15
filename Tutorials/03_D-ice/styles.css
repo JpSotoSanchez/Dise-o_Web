@@ -22,3 +22,41 @@ p {
 img {
   width: 80%;
 }
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img1{
+  background-image: url('./images/dice1.png') ;
+}
+.img2{
+  background-image: url('./images/dice2.png') ;
+}
+.img3{
+  background-image: url('./images/dice3.png') ;
+}
+.img4{
+  background-image: url('./images/dice4.png') ;
+}
+.img5{
+  background-image: url('./images/dice5.png') ;
+}
+.img6{
+  background-image: url('./images/dice6.png') ;
+}
+
+.blue{
+  background-color: #5F8670;
+}
+
+.yellow{
+  color: #FF9800;
+}
